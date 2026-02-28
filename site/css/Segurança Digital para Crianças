@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eef7ff;
+}
+
+/* Barra */
+.topbar {
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Imagem */
+.hero img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+button {
+  margin: 5px 5px 5px 0;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  margin-top: 10px;
+}

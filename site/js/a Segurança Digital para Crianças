@@ -1,0 +1,35 @@
+function verificarSenha(senha) {
+  let resultado = document.getElementById("resultadoSenha");
+
+  if (senha === "M4r!@2024") {
+    resultado.innerHTML = "🎉 Correto! Senhas fortes têm letras, números e símbolos!";
+    resultado.style.color = "green";
+  } else {
+    resultado.innerHTML = "❌ Essa senha é fraca! Pode ser fácil de descobrir.";
+    resultado.style.color = "red";
+  }
+}
+
+function respostaMensagem(resposta) {
+  let resultado = document.getElementById("resultadoMensagem");
+
+  if (resposta === "certo") {
+    resultado.innerHTML = "👏 Muito bem! Nunca compartilhe sua senha.";
+    resultado.style.color = "green";
+  } else {
+    resultado.innerHTML = "⚠️ Errado! Nunca envie sua senha para estranhos.";
+    resultado.style.color = "red";
+  }
+}
+
+function respostaInfo(resposta) {
+  let resultado = document.getElementById("resultadoInfo");
+
+  if (resposta === true) {
+    resultado.innerHTML = "✅ Isso mesmo! Não devemos compartilhar informações pessoais.";
+    resultado.style.color = "green";
+  } else {
+    resultado.innerHTML = "❌ Não é seguro compartilhar endereço online.";
+    resultado.style.color = "red";
+  }
+}

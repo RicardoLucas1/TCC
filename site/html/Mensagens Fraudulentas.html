@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Mensagens Fraudulentas</title>
+  <link rel="stylesheet" href="mensagens.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <h1>📩 Mensagens Fraudulentas</h1>
+  </header>
+
+  <section class="conteudo">
+
+    <h2>O que são?</h2>
+    <p>
+      Mensagens fraudulentas são SMS, WhatsApp ou e-mails falsos
+      que criam urgência para enganar você e roubar dados pessoais.
+    </p>
+
+    <h2>Exemplos comuns</h2>
+
+    <div class="exemplo">
+      <p><strong>⚠️ "Sua conta será bloqueada em 24h. Clique aqui agora!"</strong></p>
+    </div>
+
+    <div class="exemplo">
+      <p><strong>🎁 "Você ganhou um prêmio! Resgate imediatamente!"</strong></p>
+    </div>
+
+    <div class="exemplo">
+      <p><strong>💰 "PIX pendente. Confirme seus dados urgentemente."</strong></p>
+    </div>
+
+    <h2>Como identificar?</h2>
+    <ul>
+      <li>🚨 Mensagem com urgência exagerada</li>
+      <li>🔗 Link estranho ou encurtado</li>
+      <li>❌ Erros ou pedido de senha</li>
+      <li>👤 Número desconhecido</li>
+    </ul>
+
+    <!-- Mini interação -->
+    <div class="quiz">
+      <h3>Essa mensagem é segura?</h3>
+      <p>"Atualize sua senha agora clicando neste link suspeito."</p>
+
+      <button onclick="verificarResposta(false)">É segura</button>
+      <button onclick="verificarResposta(true)">É golpe</button>
+
+      <p id="resultado"></p>
+    </div>
+
+    <div class="voltar">
+      <button onclick="voltar()">⬅ Voltar</button>
+    </div>
+
+  </section>
+
+  <script src="mensagens.js"></script>
+</body>
+</html>
