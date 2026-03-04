@@ -1,60 +1,102 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #eef7ff;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #f0f8ff, #e6f2ff);
+    color: #333;
 }
 
-/* Barra */
+/* Barra superior */
 .topbar {
-  background: linear-gradient(90deg, #007bff, #00c6ff);
-  color: white;
-  padding: 15px;
-  text-align: center;
+    background-color: #0077cc;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Imagem */
+/* Imagem principal */
+.hero {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
 .hero img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Cards */
 .cards {
-  display: flex;
-  justify-content: space-around;
-  padding: 30px;
-  flex-wrap: wrap;
-  gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 40px 20px;
 }
 
+/* Card individual */
 .card {
-  background: white;
-  width: 300px;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  transition: 0.3s;
+    background-color: white;
+    width: 300px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
 }
 
 .card:hover {
-  transform: scale(1.05);
+    transform: translateY(-5px);
 }
 
+/* Título do card */
+.card h2 {
+    margin-bottom: 15px;
+    color: #0077cc;
+}
+
+/* Botões */
 button {
-  margin: 5px 5px 5px 0;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 8px;
-  background-color: #007bff;
-  color: white;
-  cursor: pointer;
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0077cc;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
-  background-color: #0056b3;
+    background-color: #005fa3;
 }
 
-p {
-  margin-top: 10px;
+/* Resultado */
+.card p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        height: 250px;
+    }
 }
