@@ -3,40 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/Segurança Digital para Crianças">
-  <link rel="comportamento" href="js/Segurança Digital para Crianças">
 
-  <title>Segurança Digital</title>
-
-  <!-- CSS -->
+  <!-- CSS Correto -->
   <link rel="stylesheet" href="css/style.css">
-</head>
 
+  <title>Segurança Digital Kids</title>
+</head>
 <body>
 
-  <header class="topo">
-    <h1>🔐 Segurança Digital</h1>
-    <p>Escolha um tema abaixo para aprender</p>
+  <!-- Barra Superior -->
+  <header class="topbar">
+    <h1>🛡️ Segurança Digital para Crianças</h1>
   </header>
 
-  <section class="menu">
+  <!-- Imagem Principal -->
+  <section class="hero">
+    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350"
+         alt="Criança usando computador com segurança">
+  </section>
 
+  <!-- Cards -->
+  <section class="cards">
+
+    <!-- Card 1 -->
     <div class="card">
-      <h2>📩 Mensagens Fraudulentas</h2>
-      <p>Aprenda a identificar golpes por SMS e WhatsApp.</p>
+      <h2>🔐 Jogo da Senha Segura</h2>
+      <p>Escolha qual senha é mais segura:</p>
 
-      <a href="html/mensagens.html">
-        <button type="button">Acessar</button>
-      </a>
+      <button onclick="verificarSenha('1234')">1234</button>
+      <button onclick="verificarSenha('Maria')">Maria</button>
+      <button onclick="verificarSenha('M4r!@2024')">M4r!@2024</button>
+
+      <p id="resultadoSenha"></p>
     </div>
 
+    <!-- Card 2 -->
     <div class="card">
-      <h2>🌐 Links Falsos</h2>
-      <p>Entenda como funcionam sites clonados.</p>
-      <button type="button" disabled>Em breve</button>
+      <h2>📩 Mensagem Estranha?</h2>
+      <p>Alguém desconhecido pediu sua senha. O que fazer?</p>
+
+      <button onclick="respostaMensagem('errado')">Enviar a senha</button>
+      <button onclick="respostaMensagem('certo')">Avisar um adulto</button>
+
+      <p id="resultadoMensagem"></p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <h2>🌍 Informação Pessoal</h2>
+      <p>Podemos compartilhar nosso endereço online?</p>
+
+      <button onclick="respostaInfo(false)">Sim</button>
+      <button onclick="respostaInfo(true)">Não</button>
+
+      <p id="resultadoInfo"></p>
     </div>
 
   </section>
+
+  <!-- JS Correto -->
+  <script src="js/script.js"></script>
 
 </body>
 </html>
