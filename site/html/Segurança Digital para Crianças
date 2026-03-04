@@ -6,7 +6,7 @@
   <title>Segurança Digital Kids</title>
 
   <!-- CSS correto -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/seguranca-digital.css">
 </head>
 <body>
 
@@ -60,7 +60,7 @@
   </section>
 
   <!-- JS correto -->
-  <script src="js/mensagens.js"></script>
+  <script src="js/seguranca-digital.js"></script>
 
 </body>
 </html>
