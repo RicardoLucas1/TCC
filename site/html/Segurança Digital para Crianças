@@ -17,7 +17,7 @@
 
   <!-- Imagem Principal -->
   <section class="hero">
-    <img src="imagens/criancas.jpg" alt="Crianças usando tecnologia com segurança">
+    <img src="imagens/crianças.jpg" alt="Crianças usando tecnologia com segurança">
   </section>
 
   <!-- Cards -->
@@ -60,7 +60,7 @@
   </section>
 
   <!-- JS correto -->
-  <script src="js/seguranca-digital.js"></script>
+  <script src="js/mensagens.js"></script>
 
 </body>
 </html>
