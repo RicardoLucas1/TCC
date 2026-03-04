@@ -1,35 +1,35 @@
 function verificarSenha(senha) {
-    const resultado = document.getElementById("resultadoSenha");
+  const resultado = document.getElementById("resultadoSenha");
 
-    if (senha === "M4r!@2024") {
-        resultado.innerHTML = "✅ Muito bem! Essa é uma senha forte!";
-        resultado.style.color = "green";
-    } else {
-        resultado.innerHTML = "❌ Essa senha é fraca! Tente outra.";
-        resultado.style.color = "red";
-    }
+  if (senha === "M4r!@2024") {
+    resultado.textContent = "✅ Muito bem! Essa é uma senha forte!";
+    resultado.style.color = "green";
+  } else {
+    resultado.textContent = "❌ Essa senha é fraca!";
+    resultado.style.color = "red";
+  }
 }
 
-function respostaMensagem(tipo) {
-    const resultado = document.getElementById("resultadoMensagem");
+function respostaMensagem(resposta) {
+  const resultado = document.getElementById("resultadoMensagem");
 
-    if (tipo === "certo") {
-        resultado.innerHTML = "✅ Correto! Nunca envie sua senha!";
-        resultado.style.color = "green";
-    } else {
-        resultado.innerHTML = "❌ Errado! Nunca compartilhe sua senha!";
-        resultado.style.color = "red";
-    }
+  if (resposta === "certo") {
+    resultado.textContent = "✅ Correto! Nunca compartilhe sua senha.";
+    resultado.style.color = "green";
+  } else {
+    resultado.textContent = "❌ Errado! Não envie sua senha.";
+    resultado.style.color = "red";
+  }
 }
 
 function respostaInfo(seguro) {
-    const resultado = document.getElementById("resultadoInfo");
+  const resultado = document.getElementById("resultadoInfo");
 
-    if (seguro) {
-        resultado.innerHTML = "✅ Isso mesmo! Não compartilhe informações pessoais!";
-        resultado.style.color = "green";
-    } else {
-        resultado.innerHTML = "❌ Cuidado! Informações pessoais devem ser protegidas!";
-        resultado.style.color = "red";
-    }
+  if (seguro) {
+    resultado.textContent = "✅ Isso mesmo! Não compartilhe informações pessoais.";
+    resultado.style.color = "green";
+  } else {
+    resultado.textContent = "❌ Cuidado! Não é seguro compartilhar endereço.";
+    resultado.style.color = "red";
+  }
 }
